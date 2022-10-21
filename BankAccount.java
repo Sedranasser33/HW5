@@ -1,0 +1,55 @@
+public class BankAccount {
+
+private  double balance;
+
+    /***
+     * default constructor.
+     */
+
+        /***
+         * another constructor with initial balance
+         * @param initialBalance the initial balance
+         */
+
+    public  BankAccount(double initialbalance){
+        balance=initialbalance;
+
+    }
+    public  BankAccount(){
+     this(0);}
+    //or
+  //  public  BankAccount(){
+    //   balance=0;}
+
+
+    /***
+     * depsite a spesific amountof mony to the current acount
+     * @param amount the amoumt of deposit
+     */
+
+    public void  deposit(double balance){
+   this. balance=this.balance+balance;
+
+    }
+
+    /**
+     *
+     * @param amount;
+     */
+    public void  withdraw(double amount){
+
+balance=balance-amount;
+    }
+
+    /**
+     * withdraw specific  amount of mony from the current account
+     * @param amount
+     * @return
+     */
+
+
+    public double  getbalance(){
+return balance;
+
+    }
+}
